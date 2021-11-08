@@ -1,0 +1,11 @@
+body {
+    margin: 10%;
+}
+
+.navbar {
+    align: center;
+    background-color: dimgrey;
+    width: 95%;
+    height: 20%;
+
+}

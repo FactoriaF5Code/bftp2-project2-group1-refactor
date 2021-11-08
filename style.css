@@ -9,6 +9,24 @@ body {
     height: 20%;
 
 }
+
+
+.listado {
+    text-align: center;
+    
+}
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.nombre {
+    margin-inline: 5px 5px;
+}
 /* 
 div {
     flex-direction: row;

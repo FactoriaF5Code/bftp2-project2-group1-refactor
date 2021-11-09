@@ -20,6 +20,7 @@
     justify-content: space-evenly;
     list-style-type: none;
     flex-wrap: wrap;
+    
 }
 
 .nombre {
@@ -46,9 +47,9 @@ div {
 
 .botones{
     display: flex; 
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
-    }
+}
 
 .button#selecciona
 #reinicia{

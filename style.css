@@ -50,9 +50,12 @@ div {
     justify-content: space-evenly;
     padding: 20px;
 }
-
-.button#selecciona
-#reinicia{
-    
+.bola {
+    width: 400px;
+    display: flex;
+    align-self: center;
+    }
+.bola img{
+    width: 100%;
+    justify-content: center;
 }
-

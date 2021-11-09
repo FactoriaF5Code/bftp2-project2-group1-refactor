@@ -54,11 +54,10 @@ div {
     padding: 20px;
 }
 .bola {
-    width: 400px;
+    width: 100%;
     display: flex;
-    align-self: center;
+    justify-content: center;
     }
 .bola img{
-    width: 100%;
-    justify-content: center;
+    width: 400px;
 }

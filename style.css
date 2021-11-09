@@ -1,15 +1,15 @@
 
-body {
-    margin: 10%;
+.body{
+
 }
 
-.navbar {
+.titulo {
     text-align: center;
     background-color: dimgrey;
 }
 
 
-.listado {
+.section {
     text-align: center;
     
 }
@@ -43,4 +43,11 @@ div {
     
 } 
 */
+
+#selecciona{
+
+}
+#reinicia{
+    
+}
 

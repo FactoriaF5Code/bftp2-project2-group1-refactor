@@ -1,14 +1,13 @@
+
 body {
     margin: 10%;
 }
 
 .navbar {
-    align: center;
+    text-align: center;
     background-color: dimgrey;
-    width: 95%;
-    height: 20%;
-
 }
+
 /* 
 div {
     flex-direction: row;

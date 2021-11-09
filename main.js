@@ -1,1 +1,16 @@
-console.log("Hello coders");
+$(document).ready(function () {
+
+
+
+function eligePersona() {
+    
+}
+
+
+
+$('.selecciona').on("click", eligePersona)
+
+
+
+
+});

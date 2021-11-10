@@ -1,2 +1,16 @@
+$(document).ready(function () {
 
-console.log("Hello coders");
+
+
+function eligePersona() {
+    
+}
+
+
+
+$('.selecciona').on("click", eligePersona)
+
+
+
+
+});

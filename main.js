@@ -10,3 +10,19 @@ let name = ["Anna G", "Ana C", "Laura Campos", "Gabrielle",
 
  
 
+$(document).ready(function () {
+
+
+
+function eligePersona() {
+    
+}
+
+
+
+$('.selecciona').on("click", eligePersona)
+
+
+
+
+});

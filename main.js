@@ -16,7 +16,7 @@ function eligePersona(){
   let elegida= lista[Math.floor(Math.random()*lista.length)];
 
 //pintar elegida en la seccion resultado
-$(".resultado").text(elegida)
+$(".cajaresultado").text(elegida)
   //eliminar a la persona elegida de la lista y guardarla en otra lista
 
 }

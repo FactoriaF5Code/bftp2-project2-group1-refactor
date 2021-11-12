@@ -16,11 +16,17 @@ body{
     text-align: center;
     border: 2px solid black;
     width: 50%;
+    /* he centrado la caja del listado probando diferentes porcentajes a continuación, 
+    añadiendo margin*/
+    margin: 1% 25%;
+    
     justify-content: center;
     align-items: center;
+    
 }
 
 .caja-lista {
+    
     
 }
 

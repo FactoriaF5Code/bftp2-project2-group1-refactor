@@ -1,5 +1,4 @@
 console.log("Hello coders");
-
 // intentando crear un Array
 
 let lista = ["Anna G", "Ana C", "Laura Campos", "Gabrielle",

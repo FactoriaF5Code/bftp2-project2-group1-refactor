@@ -15,6 +15,10 @@ body{
     display: flex;
     text-align: center;
     border: 2px solid black;
+
+    /* posible modificación para cambiar a forma redondeada
+    border-radius: 100%; */
+
     width: 50%;
     /* he centrado la caja del listado probando diferentes porcentajes a continuación, 
     añadiendo margin*/
@@ -65,7 +69,24 @@ div {
     display: flex; 
     justify-content: space-evenly;
     padding: 20px;
+    
 }
+
+button {
+    background: rgba(233, 209, 71, 0.966);
+    background-image: -webkit-linear-gradient(top, rgba(233, 209, 71, 0.966), #4777CD);
+    border-radius: 100px;
+    padding: 20px;
+    border: 2px solid black;
+    font-family: 'Montserrat', sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    background-color: yellow;
+    color: white;
+    opacity: 0.7;
+}
+
 .bola {
     width: 100%;
     display: flex;
@@ -89,11 +110,12 @@ div {
 footer {background-color: hsl(51, 100%, 50%);
     display:flex;
     justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    margin: 0%;
     }
+
 .textofooter {
     font-size: 12px;
-}
-footer img {
-    width: 1%;
- ;
 }

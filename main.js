@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-$(document).ready(function () {
-
-  console.log("Hello coders");
-=======
 console.log("Hello coders");
 // intentando crear un Array
->>>>>>> 0196d6ff088d731f271288050614545db5acaee1
 
   // intentando crear un Array
 

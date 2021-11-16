@@ -8,7 +8,9 @@ $(document).ready(function() {
   
   persona.sort();
 
-  $(".personas");
+  $(".personas").click(function() {
+    $(".elegida").html(elegida);
+  });
   
 
   function eligePersona(){

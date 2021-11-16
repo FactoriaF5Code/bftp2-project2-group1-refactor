@@ -1,33 +1,35 @@
-console.log("Hello coders");
-// intentando crear un Array
+$(document).ready(function() {
 
   // intentando crear un Array
 
-  let persona = [];
-
-  persona = ["Anna G", "Ana C", "Laura Campos", "Gabrielle", "Helen", "Judith", "Sara", "Tamara", "Valentina", "Yuliya", 
+  let persona = ["Anna G", "Ana C", "Laura Campos", "Gabrielle", "Helen", "Judith", "Sara", "Tamara", "Valentina", "Yuliya", 
   "Alisa", "Candy", "Desirée", "Alexia", "Carmen",  "Joana", "Sandra", "Sonia", "Kristina", "Faby", "Grácia", 
-  "Laura Contreras", "Marisa", "Rosa"]; 
+  "Laura Contreras", "Marisa", "Rosa"];  
+  
+  persona.sort();
 
-
- console.log(persona);
-
-
- function eligePersona(){
-    let elegida = persona[Math.floor(Math.random()*persona.length)];
-    //pintar elegida en la seccion resultado
-    $(".cajaresultado").text(elegida)
+  $(".personas");
   
 
-}
- 
-//eliminar a la persona elegida de la lista y guardarla en otra lista
+  function eligePersona(){
+    let number = Math.floor(Math.random()*persona.length);
+    let elegida = persona[number];
 
+    //eliminar a la persona elegida de la lista
+    lista.splice(number, 1);
+    $(".cajaresultado").text(elegida);
 
+    console.log(eligePersona);
 
-$('.selecciona').on("click", function() {
-  eligePersona();
-})
+    console.log(lista);
+  }
 
+  //pintar elegida en la seccion resultado
+  
 
+   // y guardarla en otra lista
+  //lista.splice(elegida, 1);
+  //console.log(lista);
+    
+  
 });

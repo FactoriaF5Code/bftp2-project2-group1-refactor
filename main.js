@@ -8,8 +8,8 @@ $(document).ready(function() {
   
   persona.sort();
 
-  $(".personas").click(function() {
-    $(".elegida").html(elegida);
+  $(".selecciona").click(function() {
+    $(".elegida").html(eligePersona);
   });
   
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
     let elegida = persona[number];
 
     //eliminar a la persona elegida de la lista
-    lista.splice(number, 1);
+    persona.splice(number, 1);
     $(".cajaresultado").text(elegida);
 
     console.log(eligePersona);

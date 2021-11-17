@@ -3,20 +3,23 @@ $(document).ready(function() {
     // intentando crear un Array
 
     let personas = ["Anna G", "Ana C", "Laura Campos", "Gabrielle", "Helen", "Judith", "Sara", "Tamara", "Valentina", "Yuliya", "Alisa", "Candy", "Desirée", "Alexia", "Carmen",  "Joana", "Sandra", "Sonia", "Kristina", "Faby", "Grácia", "Laura Contreras", "Marisa", "Rosa"];  
-  
+    
     let voluntarias = [];
+    
     
     personas.sort();
 
-
     let selectButton = $('.selecciona');
+    let reiniciaButton = $('.reinicia');
     let cajaResultado = $('.cajaresultado');
 
     
     selectButton.on("click", eligePersona);
+    
 
-    //if(personas.length===0){ volverAEmpezar(); }
-  
+    //boton reiniciar array 
+    reiniciaButton.on("click", reinicio());
+
 
 
     function eligePersona(){
@@ -38,17 +41,26 @@ $(document).ready(function() {
 
     }
 
-  //funcion reinicio o volverAEmpezar
+  //funcion volverAEmpezar
   function volverAEmpezar(){
     personas = voluntarias;
     personas.sort();
-    console.log(personas);
-    console.log(voluntarias);
     voluntarias = [];
     console.log(personas);
     console.log(voluntarias);
+   
   }
-    
+  //funcion reinicio
+  function reinicio(){
+    personas=voluntarias;
+    voluntarias=[];
+    console.log(personas);
+    console.log(voluntarias);
+  }
+
+
+  
+  
 
   
 

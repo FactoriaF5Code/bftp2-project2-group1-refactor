@@ -2,11 +2,11 @@ $(document).ready(function() {
 
     // intentando crear un Array
 
-    let persona = ["Anna G", "Ana C", "Laura Campos", "Gabrielle", "Helen", "Judith", "Sara", "Tamara", "Valentina", "Yuliya", "Alisa", "Candy", "Desirée", "Alexia", "Carmen",  "Joana", "Sandra", "Sonia", "Kristina", "Faby", "Grácia", "Laura Contreras", "Marisa", "Rosa"];  
+    let personas = ["Anna G", "Ana C", "Laura Campos", "Gabrielle", "Helen", "Judith", "Sara", "Tamara", "Valentina", "Yuliya", "Alisa", "Candy", "Desirée", "Alexia", "Carmen",  "Joana", "Sandra", "Sonia", "Kristina", "Faby", "Grácia", "Laura Contreras", "Marisa", "Rosa"];  
   
     let voluntarias = [];
     
-    persona.sort();
+    personas.sort();
 
 
     let selectButton = $('.selecciona');
@@ -18,20 +18,23 @@ $(document).ready(function() {
   
     function eligePersona(){
     
-      let number = Math.floor(Math.random()*persona.length);
-      let elegida = persona[number];
+      let number = Math.floor(Math.random()*personas.length);
+      let elegida = personas[number];
 
       //eliminar a la persona elegida de la lista
-      persona.splice(number, 1);
+      personas.splice(number, 1);
+      
+      // y guardarla en otra lista
       voluntarias.push(elegida);
-    
+      
+      //pintar elegida en la seccion resultado
       cajaResultado.text(elegida);
     }
 
-  //pintar elegida en la seccion resultado
+  
   
 
-   // y guardarla en otra lista
+   
   //lista.splice(elegida, 1);
   //console.log(lista);
     

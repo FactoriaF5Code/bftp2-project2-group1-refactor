@@ -10,20 +10,22 @@ $(document).ready(function() {
     personas.sort();
 
     let selectButton = $('.selecciona');
-    let reiniciaButton = $('.reinicia');
+
+    console.log(personas);
+
+    
     let cajaResultado = $('.cajaresultado');
 
     
     selectButton.on("click", eligePersona);
     
 
-    //boton reiniciar array 
-    reiniciaButton.on("click", reinicio());
-
+    
 
 
     function eligePersona(){
 
+      console.log(personas);
       if(personas.length===0){ volverAEmpezar(); }
 
       let number = Math.floor(Math.random()*personas.length);
@@ -50,19 +52,7 @@ $(document).ready(function() {
     console.log(voluntarias);
    
   }
-  //funcion reinicio
-  function reinicio(){
-    personas=voluntarias;
-    voluntarias=[];
-    console.log(personas);
-    console.log(voluntarias);
-  }
-
-
-  
-  
-
-  
+    
 
    
   //lista.splice(elegida, 1);

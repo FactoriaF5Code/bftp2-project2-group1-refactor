@@ -1,61 +1,57 @@
-// crear Array con lista de personas
-let persona = ["Anna G", "Ana C", "Laura Campos", "Gabrielle", "Helen", "Judith", "Sara", "Tamara", "Valentina", "Yuliya", 
-  "Alisa", "Candy", "Desirée", "Alexia", "Carmen",  "Joana", "Sandra", "Sonia", "Kristina", "Faby", "Grácia", 
-  "Laura Contreras", "Marisa", "Rosa"];  
-  
-  persona.sort();
+    let voluntarias = [];
+    
+    personas.sort();
 
 
+    let cajaResultado = $('.cajaresultado');
 
+    
+    selectButton.on("click", eligePersona);
 
-
-
-
-
+    //if(personas.length===0){ volverAEmpezar(); }
   
   //imprimir array en html
   //for persona.length {
     //document.appendChild(("personas")).innerHTML = persona;
   //}
 
-  
- 
 
-//$(document).ready(function() {
-  //$(".selecciona").click(function() {
-    //$(".elegida").text(eligePersona);
-  //});
-  
+    function eligePersona(){
 
-  //function eligePersona(){
-   // let number = Math.floor(Math.random()*persona.length);
-   // let elegida = persona[number];
-    //$(".elegida").text(elegida);
+      if(personas.length===0){ volverAEmpezar(); }
 
-    //iterar sobre todos los items de la lista
-    //while (persona.length <= 23) {
-      //eligePersona(); 
-      //persona.splice(number, 1); 
+      let number = Math.floor(Math.random()*personas.length);
+      let elegida = personas[number];
+
+      //eliminar a la persona elegida de la lista
+      personas.splice(number, 1);
       
+      // y guardarla en otra lista
+      voluntarias.push(elegida);
       
-     // $(".elegida").html(elegida);
+      //pintar elegida en la seccion resultado
+      cajaResultado.text(elegida);
 
-    //console.log(eligePersona);
-   // }
+
+    }
+
+  //funcion reinicio o volverAEmpezar
+  function volverAEmpezar(){
+    personas = voluntarias;
+    personas.sort();
+    console.log(personas);
+    console.log(voluntarias);
+    voluntarias = [];
+    console.log(personas);
+    console.log(voluntarias);
+  }
     
 
-    //eliminar a la persona elegida de la lista
-    
-
-    //console.log(persona);
-  //}
-
-  //pintar elegida en la seccion resultado
   
 
-   // y guardarla en otra lista
+   
   //lista.splice(elegida, 1);
   //console.log(lista);
     
   
-//});
+});

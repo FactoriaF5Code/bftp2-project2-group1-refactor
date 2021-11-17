@@ -10,14 +10,19 @@ $(document).ready(function() {
 
 
     let selectButton = $('.selecciona');
+    let cajaResultado = $('.cajaresultado');
+
+    
     selectButton.on("click", eligePersona);
 
-    let cajaResultado = $('.cajaresultado');
-    
-
+    //if(personas.length===0){ volverAEmpezar(); }
   
+
+
     function eligePersona(){
-    
+
+      if(personas.length===0){ volverAEmpezar(); }
+
       let number = Math.floor(Math.random()*personas.length);
       let elegida = personas[number];
 
@@ -29,9 +34,22 @@ $(document).ready(function() {
       
       //pintar elegida en la seccion resultado
       cajaResultado.text(elegida);
+
+
     }
 
-  
+  //funcion reinicio o volverAEmpezar
+  function volverAEmpezar(){
+    personas = voluntarias;
+    personas.sort();
+    console.log(personas);
+    console.log(voluntarias);
+    voluntarias = [];
+    console.log(personas);
+    console.log(voluntarias);
+  }
+    
+
   
 
    

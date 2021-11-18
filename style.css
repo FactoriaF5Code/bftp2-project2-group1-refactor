@@ -49,29 +49,11 @@ header img {
     padding-inline-start: 0;
 }
 
-.nombre {
-    padding: 5px;
+#personas {
+    padding: 20px;
     margin-left: 0;
     color: #b34a1a;
 }
-/* 
-div {
-    flex-direction: row;
-    font-size: 20px;
-}
-
-@media screen and (max-width: 600px) {
-    div {
-        flex-direction: column;
-        font-size: 30px;
-    }
-    
-}
-
-@media screen and (max-width: 450px) {
-    
-} 
-*/
 
 .botones{
     display: flex; 
@@ -143,4 +125,34 @@ footer {background-color: #fedd01;
 
 .textofooter {
     font-size: 12px;
+}
+
+/* Vamos a añadir los mediaqueries */
+
+/* 
+div {
+    flex-direction: row;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    div {
+        flex-direction: column;
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    
+} 
+*/
+/*Vamos a añadir los mediaqueries para tablet*/
+
+
+@media(min-width: 768px) {
+    .body {
+        background-color:red;
+    }
+    
 }

@@ -15,7 +15,12 @@ $(document).ready(function() {
 
     
     let cajaResultado = $('.cajaresultado');
-
+    let listaPersonas = $('#personas');
+    
+    personas.forEach(persona => {
+      listaPersonas.append("<span>" + persona + "</span>")
+      
+    });
     
     selectButton.on("click", eligePersona);
     
@@ -39,7 +44,11 @@ $(document).ready(function() {
       
       //pintar elegida en la seccion resultado
       cajaResultado.text(elegida);
-
+      listaPersonas.empty( )
+      personas.forEach(persona => {
+        listaPersonas.append("<span>" + persona + "</span>")
+        
+      });
 
     }
 

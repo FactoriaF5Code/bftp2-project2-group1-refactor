@@ -18,7 +18,7 @@ $(document).ready(function() {
     let listaPersonas = $('#personas');
     
     personas.forEach(persona => {
-      listaPersonas.append("<span>" + persona + "</span>")
+      listaPersonas.append("<span>" + "   " + persona + "   " + "</span>")
       
     });
     
@@ -46,7 +46,7 @@ $(document).ready(function() {
       cajaResultado.text(elegida);
       listaPersonas.empty( )
       personas.forEach(persona => {
-        listaPersonas.append("<span>" + persona + "</span>")
+        listaPersonas.append("<span>" + "   " + persona + "   " + "</span>")
         
       });
 

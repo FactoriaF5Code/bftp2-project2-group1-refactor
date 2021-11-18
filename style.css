@@ -129,13 +129,16 @@ button:hover {
 }
 
 footer {background-color: #fedd01;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
     width: 100%;
     margin: 0%;
     box-shadow: 10px 10px 30px #f16b12 inset;
+    position: fixed;
+    left:0px;
+    bottom:0px;
     }
 
 .textofooter {

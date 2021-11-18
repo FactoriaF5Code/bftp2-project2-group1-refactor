@@ -150,9 +150,7 @@ div {
 /*Vamos a añadir los mediaqueries para tablet*/
 
 
-@media(min-width: 768px) {
-    .body {
-        background-color:red;
-    }
-    
+@media(min-width: 600px) and (max-width: 1024px) {
+    body {background-color: red;}
 }
+@media(min-width: 559px) {}

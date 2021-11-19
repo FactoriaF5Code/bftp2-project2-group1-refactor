@@ -158,6 +158,8 @@ div {
         
         background-color: darkgreen;
     }
-    
+    .caja-lista {
+        width: 100%;
+    }
 
 }

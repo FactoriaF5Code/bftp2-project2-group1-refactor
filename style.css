@@ -137,67 +137,38 @@ footer {background-color: #fedd01;
     color:#b34a1a;
 }
 
-/* Vamos a añadir los mediaqueries */
 
-/* 
-div {
-    flex-direction: row;
-    font-size: 20px;
-}
-
-@media screen and (max-width: 600px) {
-    div {
-        flex-direction: column;
-        font-size: 30px;
-    }
-    
-}
-
-@media screen and (max-width: 450px) {
-    
-} 
-*/
-/*Vamos a añadir los mediaqueries para tablet*/
-
-
+/*For tablets*/
 @media(min-width: 600px) and (max-width: 1024px) {
-    body {background-color: red;}
+    /*body {background-color: red;}*/
     header img {width: 100%;}
 }
 
+
 /*For mobile phones */
 @media(max-width: 599px) {
-    body {background-color: darkgreen;}
+    
+    /*body {background-color: darkgreen;}*/
     .caja-lista {width: 100%; height: 350px }
     header img {width: 100%; float: left;}
     .bola {display: none;}
     .cajaresultado {margin-bottom: 10px; margin-top: 20px; font-size: 20px;}
     .caja-lista h2 {font-size: 18px;}
     
-    #personas span {
-        padding: 5px;
-        font-size: 12px;
-    }
-    
+    #personas span { padding: 5px; font-size: 12px; }
     .textofooter {font-size: 10px;}
     
 
 }
 
 @media(max-width: 375px) {
-    body {background-color: white;}
+    
+    /*body {background-color: white;}*/
     .caja-lista {width: 100%; height: 350px }
     header img {width: 100%; float: left;}
     .bola {display: none;}
     .cajaresultado {margin-bottom: 10px; margin-top: 20px; font-size: 20px;}
     .caja-lista h2 {font-size: 18px;}
-    
-    #personas span {
-        padding: 5px;
-        font-size: 12px;
-    }
-
+    #personas span {padding: 5px; font-size: 12px;}
     footer {display: none}
-    
-
 }
